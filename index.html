@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        h1 {
+            text-align:center;
+            background-color:lightsalmon;
+            color:red;
+            font-size:60px;
+            padding:100px;
+            margin:-10px;
+        }
+        h2 {
+            text-align:center;
+            font-size:25px;
+        }
+        li{
+            border: 1px dashed grey;
+        }
+        .content {
+            color:green;
+        }
+        article .content {
+           background-color:goldenrod;
+           padding:1em;
+           font-family:cursive
+        }
+        hr {
+            height: 10px;
+            color:cornflowerblue; 
+        }
+            
+
+    </style>
 </head>
 <body>
     <header>
@@ -20,10 +51,14 @@
     </header>
     <hr>
     <main>
-        <p>My main paragraph. <br>
+        <article>
+        <p class="content">My main paragraph. <br>
         breaking lines.</p>
-        <p class="centered">
+        <p class="content">
             Playing with new extentions.
+        </p>
+        </article>
+        <p class="content">This paragraph is outside the "article" element.
         </p>
         <h2 class="centered">Cat Names</h2>
         <ul id="catPunList">
@@ -35,7 +70,7 @@
     <hr>
     <footer>
         <p>My left foot is a snail....:</p>
-    <img id="snailImage" src="https://upload.wikimedia.org/wikipedia/commons/6/69/Grapevinesnail_01.jpg">
+        <img id="snailImage" src="https://upload.wikimedia.org/wikipedia/commons/6/69/Grapevinesnail_01.jpg">
     </footer>
 </body>
 </html>
